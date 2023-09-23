@@ -24,5 +24,21 @@
         "64": "icons/viuws_64x64.png",
         "96": "icons/viuws_96x96.png",
         "128": "icons/viuws_128x128.png"
-    }
+    },
+    "background": {
+        "service_worker": "service-worker.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content-script.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "nativeMessaging"
+    ]
 }
