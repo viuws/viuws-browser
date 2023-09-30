@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "ViUWS Proxy",
+    "name": "ViUWS Browser",
     "version": "1.0",
     "action": {
         "default_icon": {
@@ -12,7 +12,7 @@
             "96": "icons/viuws_96x96.png",
             "128": "icons/viuws_128x128.png"
         },
-        "default_title": "ViUWS Proxy",
+        "default_title": "ViUWS Browser",
         "default_popup": "popup/popup.html"
     },
     "description": "Visual Uppsala Workflow System (ViUWS)",
