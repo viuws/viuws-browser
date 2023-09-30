@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "ViUWS browser extension",
-    "version": "1.0",
+    "version": "1.0.0",
     "action": {
         "default_icon": {
             "16": "icons/viuws_16x16.png",
@@ -26,19 +26,14 @@
         "128": "icons/viuws_128x128.png"
     },
     "background": {
-        "service_worker": "service-worker.js"
+        "service_worker": "background.ts",
+        "type": "module"
     },
     "content_scripts": [
         {
-            "matches": [
-                "<all_urls>"
-            ],
-            "js": [
-                "content-script.js"
-            ]
+            "matches": ["<all_urls>"],
+            "js": ["content.ts"]
         }
     ],
-    "permissions": [
-        "nativeMessaging"
-    ]
+    "permissions": ["nativeMessaging"]
 }
